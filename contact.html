@@ -268,8 +268,18 @@ color: white;
 #footerR>img{
 width: 200px;
 }
+.nav a{
+            text-decoration: none;
+            color: white;
+        }
+        button a{
+            text-decoration: none;
+            color: white;
+        }
 
-
+        .bar>a>img{
+            width: 30%;
+        }
 
     </style>
 </head>
@@ -277,19 +287,22 @@ width: 200px;
     <div id="background">
         <div class="navbar">
             <div class="bar">
-                <img src="https://kcdn.twiikapp.com/images/logo.png">
+                <a href="./index.html">
+                    <img src="https://kcdn.twiikapp.com/images/logo.png">
+                </a>
+                
             </div>
             <div class="nav">
-            <p>Get the app</p>
-            <p>Contact</p>
-            <p>Login</p>
-            <button>Create Account</button>
+                <p><a href="./GetApp.html">Get the app</a></p>
+                <p><a href="./contact.html">Contact</a></p>
+                <p><a href="./Login.html">Login</a></p>
+                <button><a href="./CreateP.html">Create Account</a></button>
             </div>
         </div>
         <div class="banner">
            <h1>Are you not a member? </h1>
-               <button class="one">Create Account</button>
-               <button class="two">Get App</button>
+               <button class="one"><a href="./CreateP.html">Create Account</a></button>
+               <button class="two"><a href="./GetApp.html">Get App</a></button>
         
         </div>
        

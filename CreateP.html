@@ -1,16 +1,22 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get The App</title>
+    <title>Create Account Page</title>
     <style>
         *{
             margin: 0px;
             padding: 0px;
+            
         }
-            #background{
-            background-color: #383838;
+        body{
+            background-color: #121451;
+            font-family: lato, Arial, Helvetica, sans-serif;
+        }
+        #background{
+            /* background-color: #383838; */
             width: 100%;
             height: 50%;
             background-size: cover;
@@ -43,7 +49,7 @@
             
         }
         .navbar>div>img{
-           width: 35%;
+           width: 25%;
            /* border: 1px solid green; */
            margin-left: 30px;
            cursor: pointer;
@@ -69,53 +75,6 @@
         .bar{
             width: 30%;
         }
-        .banner{
-            /* border: 1px solid red; */
-            width: 50%;
-            margin: auto;
-            margin-bottom: 50px;
-        }
-        #img{
-           /* border: 1px solid red; */
-           width: 80%;
-           margin: auto;
-           margin-top: -300px;
-           margin-bottom: 100px;
-           display: flex;
-           padding: 30px;
-        }
-        .imgi>img{
-            width: 80%;
-        }
-        .imgt{
-            /* border: 1px solid; */
-            width: 40%;
-            padding: 10px;
-            
-        }
-        .imgt{
-            margin-top: 300px;
-            /* border: 1px solid; */
-            width: 40%;
-            margin-left: 60px;
-        }
-        .imgt h2{
-            margin-bottom: 50px;
-            background: url(https://kcdn.twiikapp.com/images/pt/startpage_h1_bg.jpg) no-repeat left bottom;
-            padding-bottom: 30px;
-            margin-bottom: 30px;
-            text-transform: uppercase;
-            font-size: 24px;
-            color: #000;
-            font-family: lato-light;
-            font-weight: normal;
-        }
-        .imgt>a>img{
-            height: 50px;
-            margin-top: 20px;
-            
-        }
-        /* footer section */
         #footer{
             /* position: absolute; */
             left: 0px;
@@ -149,23 +108,101 @@
        }
        #footerR>p{
           color: #BBBBBB;
+          margin-top: 10px;
+          margin-bottom: 10px;
        }
        #footerR>a{
         text-decoration: none;
         color: white;
+        margin-top: 10px;
        }
        #footerR>img{
         width: 200px;
        }
-      
-        
+       #footer {
+    border-top: 1px solid rgba(255,255,255,0.25);
+       }
+       /* middle */
+       #middle{
+        background-color: #121451;
+        /* border: 1px solid red; */
+        width: 35%;
+        margin: auto;
+        margin-bottom: 50px;
+       }
+       #middle>h4{
+        color: white;
+        margin-top: 10px;
+        text-align: center;
+       }
+       #middle>a>img{
+            height: 50px;
+            margin: auto;
+            margin-top: 20px;
+            padding: 0px;
+            margin-left: 50px;
+            /* border: 1px solid red; */
+        }
+        /* #middle>a>img:first-child{
+            margin-left: 60px;
+        } */
+       
+        /* content */
+        #content{
+            text-align: center;
+            padding: 30px;
+            /* border: 1px solid red; */
+            color: #fff;
+            margin-bottom: 50px;
+        }
+        #content>h1{
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        #box{
+            border: 1px solid transparent;
+            height: 200px;
+            width: 80%;
+            margin: auto;
+            border-radius: 20px;
+            background-color: #2a2c63 ;
+            color:white;
+            text-align: center;
+
+        }
+        .up{
+            margin-top: 20px;
+        }
+        .up>h1{
+           
+           font-size: 36px; 
+        }
+        .up>p{
+            margin-top: 10px;
+        }
+        .down{
+            margin-top: 30px;
+        }
+        .down>input{
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            padding-left: 30px;
+            padding-right: 30px;
+            cursor: pointer;
+        }
+        .bar>a>img{
+            width: 30%;
+        }
     </style>
 </head>
 <body>
     <div id="background">
         <div class="navbar">
             <div class="bar">
-                <img src="https://kcdn.twiikapp.com/images/logo.png">
+                <a href="./index.html">
+                    <img src="https://kcdn.twiikapp.com/images/logo.png">
+                </a>
             </div>
             <div class="nav">
             <p>Get the app</p>
@@ -174,24 +211,29 @@
             <button>Create Account</button>
             </div>
         </div>
-        <div class="banner">
-           
-         </div>
-        
-       
     </div>
-    <div id="img">
-        <div class="imgi">
-            <img src="https://kcdn.twiikapp.com/images/gettheapp.png" alt="">
+    <div id="box">
+        <div class="up">
+            <h1>Do you have a code for TeamBoost?</h1>
+            <p>If you have received a code to join a TeamBoost, then you can create your account here on the web, fill in the code below and click "Proceed".</p>
         </div>
-        <div class="imgt">
-            <h2>DOWNLOAD TWIIK TODAY</h2>
-            <p>As a member you will be able to log all your workouts, track results, follow programs and challenge friends and join groups.</p>
+        <div class="down">
+            <input type="text" placeholder="Enter Your Code Here">
+            <input type="submit" value="Proceed">
+        </div>
+    </div>
+    <div id="content">
+        <h1>Create an account in the app!</h1>
+        <p>To be able to use Twiik you need to create an account in the app.
+
+        </p>
+    </div>
+    <div id="middle">
+            <img src="https://kcdn.twiikapp.com/images/twiik_register.png" alt="">
+            <h4>Get the App</h4>
             <a href="https://itunes.apple.com/se/app/twiik/id1022318229?ls=1&amp;mt=8"><img src="https://kcdn.twiikapp.com/images/language/en/appstore_button.png" alt="Appstore_button"></a>
             <a href="https://play.google.com/store/apps/details?id=me.twiik.twiikapp" ><img src="https://kcdn.twiikapp.com/images/language/en/googleplay_button.png" alt="Googleplay_button"></a>
-            
-        </div>
-     </div>
+    </div>
     <div id="footer">
         <div id="footerR">
             <img src="https://kcdn.twiikapp.com/images/logo.png" alt="">
