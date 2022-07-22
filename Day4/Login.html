@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        #form{
+            border-width: 20px;
+            width: 350px;
+            height: auto;
+            border: 1px solid;
+            margin: auto;
+            padding: 20px;
+            background-color: whitesmoke;
+        }
+       #form input{
+        border: none;
+        border-bottom: 1px solid #000;
+        border-radius: 0px;
+        padding: 10px 0px;
+        width: 100%;
+        margin-bottom: 10px;
+       }
+       #form h1{
+        text-align: center;
+       }
+       #form p{
+        text-align: center;
+        margin-bottom: 40px;
+       }
+       #fb{
+        display: inline-block;
+        padding: 5px;
+        font-size: 15px;
+        color: #fff;
+        background: #3b5998 url(https://kcdn.twiikapp.com/images/facebook_icon.png) no-repeat 10px 10px;
+        border: none;
+        line-height: 0px;
+        border-radius: 10px;
+        width: 100%;
+        height: 30px;
+        text-decoration: none;
+       }
+       #login{
+        background: #3cc6dc;
+        color: #fff;
+        border: none;
+        line-height: 0px;
+        font-size: 15px;
+        width: 100%;
+        height:30px ;
+        outline: none;
+        border-radius: 20px;
+        border-bottom: none;
+       }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <h1>LOGIN</h1>
+        <input type="email" id="email" placeholder="username_or_email">
+        <input type="password" id="password" placeholder="Password">
+        <p>Log in automatically next time</p>
+        <!-- <input id="login" type="button" value="Login"> -->
+        <button id="login">Login</button>
+        <p>or</p>
+        <a id="fb" href="https://www.facebook.com/dialog/oauth?response_type=code&amp;client_id=26013359906&amp;redirect_uri=https%3A%2F%2Fwww.twiikapp.com%2Fconnect.php%2Fapp%2Ffacebook&amp;state=https%3A%2F%2Fwww.shapelink.com%2Fen%2Fuser%2Ffacebooklogin&amp;scope=email"><p>Login with Facebook</p></a>
+        <p>Forgetten the Password . Create Account</p>
+    </form>
+    
+</body>
+</html>
